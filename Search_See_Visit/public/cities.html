@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico?v=2" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./media.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3611c79d68.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Şehirler</title>
+  </head>
+  <body class="smooth">
+    <!-- Loading -->
+    <div class="loading-animation">
+      <img src="./pin2.gif" alt="Animation" />
+    </div>
+
+    <header id="home">
+      <div class="container">
+        <nav class="navigation">
+          <div class="header-mobile">
+            <i class="bx bx-menu" id="open-menu"></i>
+          </div>
+          <div class="logo">
+            <p>Araştır Gör Gez</p>
+          </div>
+          <div class="navigation-links">
+            <ul class="navigation-items">
+              <li class="navigation-list-item">
+                <a href="./index.html" class="nav-link">Search</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#travel" class="nav-link">Travel-List</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#meals" class="nav-link">Meal-List</a>
+              </li>
+
+              <li class="navigation-item">
+                <a href="#footer" class="nav-link">Contact</a>
+              </li>
+              <li>
+                <i class="bx bx-x" id="nav-close"></i>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="slider travels">
+        <div class="slides">
+          <div class="slider-content">
+            <div class="slider-title fade" id="travel"></div>
+          </div>
+          <div class="slide-item"></div>
+
+          <div class="slider-buttons">
+            <button class="left-side-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-chevron-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </button>
+            <button class="right-side-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="slider-description">
+              <div class="description-head">
+                <h4 class="active">Information</h4>
+                <h4>Tours</h4>
+                <h4>Hotels</h4>
+              </div>
+              <div class="info description-paragraph"></div>
+
+              <div class="description-paragraph invisible">
+                <p class="active info-tour">
+                  Maalesef bu ilde anlaşmalı olduğumuz bir tur bulunmamaktadır.
+                </p>
+              </div>
+
+              <div class="description-paragraph invisible">
+                <p class="active info-otel">
+                  Maalesef bu ilde anlaşmalı olduğumuz bir otel bulunmamaktadır.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider meals">
+        <!-- <div class="container"> -->
+        <div class="slides">
+          <div class="slider-content">
+            <div class="slider-title fade" id="meals"></div>
+          </div>
+          <div class="slide-item"></div>
+
+          <div class="slider-buttons">
+            <button class="left-side-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-chevron-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </button>
+            <button class="right-side-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="slider-description">
+              <div class="description-head">
+                <h4 class="active">İçeriği</h4>
+                <h4>Restorantlar</h4>
+              </div>
+              <div class="info-meal description-paragraph"></div>
+
+              <div class="description-paragraph invisible">
+                <p class="active info-restaurant">
+                  Maalesef bu ilde anlaşmalı olduğumuz bir restorant
+                  bulunmamaktadır.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-logo">
+            <h3>Araştır Gez Gör</h3>
+          </div>
+          <div class="footer-directions">
+            <div class="comunity">
+              <ul class="footer-links">
+                <li class="footer-items title"><p>Community</p></li>
+                <li class="footer-items">
+                  <i class="bx bx-support"></i>
+                  <span>7/24 Online Support</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bx-credit-card-alt"></i>
+                  <span>Safety Payment</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-upwork"></i>
+                  <span>Updated Travel List</span>
+                </li>
+                <li class="footer-items">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Special Travel Plan</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <ul class="footer-links">
+                <li class="footer-items title"><p>Contact Us</p></li>
+                <li class="footer-items">
+                  <i class="bx bxs-phone"></i>
+                  <span>+90 505 210 61 22</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxs-envelope"></i>
+                  <span>arastirgezgor@support.com</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="medias">
+              <ul class="footer-links">
+                <li class="footer-items title">
+                  <p>Media</p>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-facebook-circle"></i>
+                  <span>Facebook</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-instagram-alt"></i>
+                  <span>İnstagram</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-twitter"></i>
+                  <span>Twitter</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-company-private">
+          <span>© 2023 Araştır Gez Gör Turkey</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="./js/citiespage.js"></script>
+    <!-- <script type="module" src="../index.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./favicon.ico?v=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./media.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/3611c79d68.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Araştır Gör Gez</title>
+  </head>
+  <body>
+    <header id="home">
+      <div class="container">
+        <nav class="navigation">
+          <div class="header-mobile">
+            <i class="bx bx-menu" id="open-menu"></i>
+          </div>
+          <div class="logo">
+            <p>Araştır Gör Gez</p>
+          </div>
+          <div class="navigation-links">
+            <ul class="navigation-items">
+              <li class="navigation-list-item">
+                <a href="#map" class="nav-link">Map</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#footer" class="nav-link">Contact</a>
+              </li>
+              <li>
+                <i class="bx bx-x" id="nav-close"></i>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main_container">
+        <section class="section-search" id="search">
+          <div class="container">
+            <div class="search-wrapper">
+              <input
+                type="text"
+                class="search-bar"
+                placeholder="Şehir ismi giriniz...(İstanbul,Ankara)"
+              />
+              <buttton class="btn ara-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </buttton>
+            </div>
+          </div>
+        </section>
+
+        <section class="section_map">
+          <div id="harita"></div>
+          <div class="city_button"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-logo">
+            <h3>Araştır Gez Gör</h3>
+          </div>
+          <div class="footer-directions">
+            <div class="comunity">
+              <ul class="footer-links">
+                <li class="footer-items title"><p>Community</p></li>
+                <li class="footer-items">
+                  <i class="bx bx-support"></i>
+                  <span>7/24 Online Support</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bx-credit-card-alt"></i>
+                  <span>Safety Payment</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-upwork"></i>
+                  <span>Updated Travel List</span>
+                </li>
+                <li class="footer-items">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Special Travel Plan</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <ul class="footer-links">
+                <li class="footer-items title"><p>Contact Us</p></li>
+                <li class="footer-items">
+                  <i class="bx bx-phone"></i>
+                  <span>+90 505 210 61 22</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bx-mail-send"></i>
+                  <span>arastirgezgor@support.com</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="medias">
+              <ul class="footer-links">
+                <li class="footer-items title">
+                  <p>Media</p>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-facebook-circle"></i>
+                  <span>Facebook</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-instagram-alt"></i>
+                  <span>İnstagram</span>
+                </li>
+                <li class="footer-items">
+                  <i class="bx bxl-twitter"></i>
+                  <span>Twitter</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-company-private">
+          <span>© 2023 Araştır Gez Gör Turkey</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
